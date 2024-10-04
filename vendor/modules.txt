@@ -58,7 +58,7 @@ github.com/Azure/azure-sdk-for-go/sdk/internal/log
 github.com/Azure/azure-sdk-for-go/sdk/internal/poller
 github.com/Azure/azure-sdk-for-go/sdk/internal/temporal
 github.com/Azure/azure-sdk-for-go/sdk/internal/uuid
-# github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.0.0
+# github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.2.0
 ## explicit; go 1.18
 github.com/Azure/azure-sdk-for-go/sdk/storage/azblob
 github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/appendblob
@@ -153,24 +153,60 @@ github.com/aws/aws-sdk-go/service/sts/stsiface
 # github.com/beorn7/perks v1.0.1
 ## explicit; go 1.11
 github.com/beorn7/perks/quantile
+# github.com/bits-and-blooms/bitset v1.7.0
+## explicit; go 1.14
+github.com/bits-and-blooms/bitset
 # github.com/bshuster-repo/logrus-logstash-hook v1.0.0
 ## explicit
 github.com/bshuster-repo/logrus-logstash-hook
+# github.com/btcsuite/btcd v0.22.3
+## explicit; go 1.17
+github.com/btcsuite/btcd/btcec
+# github.com/btcsuite/btcd/btcec/v2 v2.2.0
+## explicit; go 1.17
+github.com/btcsuite/btcd/btcec/v2
+github.com/btcsuite/btcd/btcec/v2/ecdsa
 # github.com/cenkalti/backoff/v4 v4.2.1
 ## explicit; go 1.18
 github.com/cenkalti/backoff/v4
 # github.com/cespare/xxhash/v2 v2.2.0
 ## explicit; go 1.11
 github.com/cespare/xxhash/v2
+# github.com/consensys/bavard v0.1.13
+## explicit; go 1.15
+github.com/consensys/bavard
+# github.com/consensys/gnark-crypto v0.12.1
+## explicit; go 1.18
+github.com/consensys/gnark-crypto/ecc
+github.com/consensys/gnark-crypto/ecc/bls12-381
+github.com/consensys/gnark-crypto/ecc/bls12-381/fp
+github.com/consensys/gnark-crypto/ecc/bls12-381/fr
+github.com/consensys/gnark-crypto/ecc/bls12-381/internal/fptower
+github.com/consensys/gnark-crypto/field/generator/config
+github.com/consensys/gnark-crypto/field/generator/internal/addchain
+github.com/consensys/gnark-crypto/field/hash
+github.com/consensys/gnark-crypto/field/pool
+github.com/consensys/gnark-crypto/internal/generator/config
+github.com/consensys/gnark-crypto/internal/parallel
 # github.com/coreos/go-systemd/v22 v22.5.0
 ## explicit; go 1.12
 github.com/coreos/go-systemd/v22/activation
+# github.com/crate-crypto/go-kzg-4844 v0.3.0
+## explicit; go 1.18
+github.com/crate-crypto/go-kzg-4844
+github.com/crate-crypto/go-kzg-4844/internal/kzg
+github.com/crate-crypto/go-kzg-4844/internal/multiexp
+github.com/crate-crypto/go-kzg-4844/internal/utils
 # github.com/cyphar/filepath-securejoin v0.2.4
 ## explicit; go 1.13
 github.com/cyphar/filepath-securejoin
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
+# github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0
+## explicit; go 1.17
+github.com/decred/dcrd/dcrec/secp256k1/v4
+github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa
 # github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 ## explicit
 github.com/dgryski/go-rendezvous
@@ -183,6 +219,54 @@ github.com/docker/go-events
 # github.com/docker/go-metrics v0.0.1
 ## explicit; go 1.11
 github.com/docker/go-metrics
+# github.com/ethereum/c-kzg-4844 v0.3.1
+## explicit; go 1.19
+github.com/ethereum/c-kzg-4844/bindings/go
+# github.com/ethereum/go-ethereum v1.13.4
+## explicit; go 1.20
+github.com/ethereum/go-ethereum
+github.com/ethereum/go-ethereum/accounts
+github.com/ethereum/go-ethereum/common
+github.com/ethereum/go-ethereum/common/hexutil
+github.com/ethereum/go-ethereum/common/math
+github.com/ethereum/go-ethereum/common/mclock
+github.com/ethereum/go-ethereum/core/types
+github.com/ethereum/go-ethereum/crypto
+github.com/ethereum/go-ethereum/crypto/kzg4844
+github.com/ethereum/go-ethereum/crypto/secp256k1
+github.com/ethereum/go-ethereum/crypto/secp256k1/libsecp256k1/include
+github.com/ethereum/go-ethereum/crypto/secp256k1/libsecp256k1/src
+github.com/ethereum/go-ethereum/crypto/secp256k1/libsecp256k1/src/modules/recovery
+github.com/ethereum/go-ethereum/event
+github.com/ethereum/go-ethereum/log
+github.com/ethereum/go-ethereum/params
+github.com/ethereum/go-ethereum/rlp
+github.com/ethereum/go-ethereum/rlp/internal/rlpstruct
+github.com/ethereum/go-ethereum/signer/core/apitypes
+# github.com/ethersphere/bee v1.18.2
+## explicit; go 1.21
+github.com/ethersphere/bee/pkg/bmt
+github.com/ethersphere/bee/pkg/bmtpool
+github.com/ethersphere/bee/pkg/cac
+github.com/ethersphere/bee/pkg/crypto
+github.com/ethersphere/bee/pkg/crypto/eip712
+github.com/ethersphere/bee/pkg/encryption
+github.com/ethersphere/bee/pkg/encryption/store
+github.com/ethersphere/bee/pkg/feeds
+github.com/ethersphere/bee/pkg/feeds/epochs
+github.com/ethersphere/bee/pkg/feeds/factory
+github.com/ethersphere/bee/pkg/feeds/sequence
+github.com/ethersphere/bee/pkg/file
+github.com/ethersphere/bee/pkg/file/joiner
+github.com/ethersphere/bee/pkg/file/splitter
+github.com/ethersphere/bee/pkg/file/splitter/internal
+github.com/ethersphere/bee/pkg/log
+github.com/ethersphere/bee/pkg/metrics
+github.com/ethersphere/bee/pkg/soc
+github.com/ethersphere/bee/pkg/storage
+github.com/ethersphere/bee/pkg/swarm
+github.com/ethersphere/bee/pkg/util/ioutil
+github.com/ethersphere/bee/pkg/util/testutil
 # github.com/felixge/httpsnoop v1.0.4
 ## explicit; go 1.13
 github.com/felixge/httpsnoop
@@ -199,6 +283,9 @@ github.com/go-logr/logr/funcr
 # github.com/go-logr/stdr v1.2.2
 ## explicit; go 1.16
 github.com/go-logr/stdr
+# github.com/go-stack/stack v1.8.1
+## explicit; go 1.17
+github.com/go-stack/stack
 # github.com/golang-jwt/jwt/v5 v5.2.1
 ## explicit; go 1.18
 github.com/golang-jwt/jwt/v5
@@ -259,6 +346,12 @@ github.com/gorilla/mux
 github.com/grpc-ecosystem/grpc-gateway/v2/internal/httprule
 github.com/grpc-ecosystem/grpc-gateway/v2/runtime
 github.com/grpc-ecosystem/grpc-gateway/v2/utilities
+# github.com/hashicorp/errwrap v1.0.0
+## explicit
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-multierror v1.1.1
+## explicit; go 1.13
+github.com/hashicorp/go-multierror
 # github.com/hashicorp/golang-lru/arc/v2 v2.0.5
 ## explicit; go 1.18
 github.com/hashicorp/golang-lru/arc/v2
@@ -266,9 +359,15 @@ github.com/hashicorp/golang-lru/arc/v2
 ## explicit; go 1.18
 github.com/hashicorp/golang-lru/v2/internal
 github.com/hashicorp/golang-lru/v2/simplelru
+# github.com/holiman/uint256 v1.2.3
+## explicit; go 1.18
+github.com/holiman/uint256
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
+# github.com/ipfs/go-log/v2 v2.5.1
+## explicit; go 1.16
+github.com/ipfs/go-log/v2
 # github.com/jmespath/go-jmespath v0.4.0
 ## explicit; go 1.14
 github.com/jmespath/go-jmespath
@@ -285,12 +384,39 @@ github.com/klauspost/compress/zstd/internal/xxhash
 ## explicit; go 1.11
 github.com/kylelemons/godebug/diff
 github.com/kylelemons/godebug/pretty
+# github.com/mattn/go-isatty v0.0.19
+## explicit; go 1.15
+github.com/mattn/go-isatty
 # github.com/matttproud/golang_protobuf_extensions v1.0.4
 ## explicit; go 1.9
 github.com/matttproud/golang_protobuf_extensions/pbutil
 # github.com/mitchellh/mapstructure v1.5.0
 ## explicit; go 1.14
 github.com/mitchellh/mapstructure
+# github.com/mmcloughlin/addchain v0.4.0
+## explicit; go 1.16
+github.com/mmcloughlin/addchain
+github.com/mmcloughlin/addchain/acc
+github.com/mmcloughlin/addchain/acc/ast
+github.com/mmcloughlin/addchain/acc/ir
+github.com/mmcloughlin/addchain/acc/parse
+github.com/mmcloughlin/addchain/acc/parse/internal/parser
+github.com/mmcloughlin/addchain/acc/pass
+github.com/mmcloughlin/addchain/acc/printer
+github.com/mmcloughlin/addchain/alg
+github.com/mmcloughlin/addchain/alg/contfrac
+github.com/mmcloughlin/addchain/alg/dict
+github.com/mmcloughlin/addchain/alg/ensemble
+github.com/mmcloughlin/addchain/alg/exec
+github.com/mmcloughlin/addchain/alg/heuristic
+github.com/mmcloughlin/addchain/alg/opt
+github.com/mmcloughlin/addchain/internal/bigint
+github.com/mmcloughlin/addchain/internal/bigints
+github.com/mmcloughlin/addchain/internal/bigvector
+github.com/mmcloughlin/addchain/internal/container/heap
+github.com/mmcloughlin/addchain/internal/errutil
+github.com/mmcloughlin/addchain/internal/print
+github.com/mmcloughlin/addchain/meta
 # github.com/opencontainers/go-digest v1.0.0
 ## explicit; go 1.13
 github.com/opencontainers/go-digest
@@ -353,6 +479,15 @@ github.com/spf13/pflag
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
 github.com/stretchr/testify/suite
+# github.com/supranational/blst v0.3.11
+## explicit; go 1.11
+github.com/supranational/blst/bindings/go
+# github.com/uncloud-registry/swarm-driver v0.0.0-20241004061746-d01712981231
+## explicit; go 1.22.4
+github.com/uncloud-registry/swarm-driver
+github.com/uncloud-registry/swarm-driver/lookuper
+github.com/uncloud-registry/swarm-driver/publisher
+github.com/uncloud-registry/swarm-driver/store
 # go.opencensus.io v0.24.0
 ## explicit; go 1.13
 go.opencensus.io
@@ -472,8 +607,21 @@ go.opentelemetry.io/proto/otlp/common/v1
 go.opentelemetry.io/proto/otlp/metrics/v1
 go.opentelemetry.io/proto/otlp/resource/v1
 go.opentelemetry.io/proto/otlp/trace/v1
-# golang.org/x/crypto v0.24.0
-## explicit; go 1.18
+# go.uber.org/multierr v1.11.0
+## explicit; go 1.19
+go.uber.org/multierr
+# go.uber.org/zap v1.25.0
+## explicit; go 1.19
+go.uber.org/zap
+go.uber.org/zap/buffer
+go.uber.org/zap/internal
+go.uber.org/zap/internal/bufferpool
+go.uber.org/zap/internal/color
+go.uber.org/zap/internal/exit
+go.uber.org/zap/internal/pool
+go.uber.org/zap/zapcore
+# golang.org/x/crypto v0.26.0
+## explicit; go 1.20
 golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert
 golang.org/x/crypto/bcrypt
@@ -488,6 +636,7 @@ golang.org/x/crypto/internal/poly1305
 golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/pkcs12
 golang.org/x/crypto/pkcs12/internal/rc2
+golang.org/x/crypto/sha3
 # golang.org/x/net v0.26.0
 ## explicit; go 1.18
 golang.org/x/net/context
@@ -507,17 +656,17 @@ golang.org/x/oauth2/google/internal/externalaccount
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sync v0.7.0
+# golang.org/x/sync v0.8.0
 ## explicit; go 1.18
 golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.21.0
+# golang.org/x/sys v0.23.0
 ## explicit; go 1.18
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
-# golang.org/x/text v0.16.0
+# golang.org/x/text v0.17.0
 ## explicit; go 1.18
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
@@ -686,3 +835,7 @@ gopkg.in/yaml.v2
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
+# rsc.io/tmplfunc v0.0.3
+## explicit; go 1.17
+rsc.io/tmplfunc
+rsc.io/tmplfunc/internal/parse

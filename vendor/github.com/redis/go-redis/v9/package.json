@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:redis/go-redis.git",
   "author": "Vladimir Mihailenco <vladimir.webdev@gmail.com>",
-  "license": "BSD-2-clause"
+  "license": "BSD-2-clause",
+  "dependencies": {
+    "redis": "file:"
+  }
 }

@@ -482,12 +482,13 @@ github.com/stretchr/testify/suite
 # github.com/supranational/blst v0.3.11
 ## explicit; go 1.11
 github.com/supranational/blst/bindings/go
-# github.com/uncloud-registry/swarm-driver v0.0.0-20241004061746-d01712981231
+# github.com/uncloud-registry/swarm-driver v0.0.0-20241008070400-5396b928737d
 ## explicit; go 1.22.4
 github.com/uncloud-registry/swarm-driver
 github.com/uncloud-registry/swarm-driver/lookuper
 github.com/uncloud-registry/swarm-driver/publisher
 github.com/uncloud-registry/swarm-driver/store
+github.com/uncloud-registry/swarm-driver/store/teststore
 # go.opencensus.io v0.24.0
 ## explicit; go 1.13
 go.opencensus.io

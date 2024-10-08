@@ -1,8 +1,6 @@
 module github.com/distribution/distribution/v3
 
-go 1.22.4
-
-toolchain go1.22.6
+go 1.23
 
 require (
 	cloud.google.com/go/storage v1.30.1
@@ -30,7 +28,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.8.0
 	github.com/stretchr/testify v1.9.0
-	github.com/uncloud-registry/swarm-driver v0.0.0-20241004061746-d01712981231
+	github.com/uncloud-registry/swarm-driver v0.0.0-20241008070400-5396b928737d
 	go.opentelemetry.io/contrib/exporters/autoexport v0.46.1
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.46.1
 	go.opentelemetry.io/otel v1.21.0

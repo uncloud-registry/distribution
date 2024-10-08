@@ -337,6 +337,8 @@ github.com/tklauser/numcpus v0.6.1 h1:ng9scYS7az0Bk4OZLvrNXNSAO2Pxr1XXRAPyjhIx+F
 github.com/tklauser/numcpus v0.6.1/go.mod h1:1XfjsgE2zo8GVw7POkMbHENHzVg3GzmoZ9fESEdAacY=
 github.com/uncloud-registry/swarm-driver v0.0.0-20241004061746-d01712981231 h1:KQMCh3vAZlEmWviw0fXZbAZPa8+lsWBkMs8R10dcUm8=
 github.com/uncloud-registry/swarm-driver v0.0.0-20241004061746-d01712981231/go.mod h1:BtQhzToLB+G6CG+pCYX+SvixcExrN5D6R8F5JQtxaTM=
+github.com/uncloud-registry/swarm-driver v0.0.0-20241008070400-5396b928737d h1:ZmL4B7JPdnVO3u+sY9xwd9sqdaT/UYCh5Osnsd9HieA=
+github.com/uncloud-registry/swarm-driver v0.0.0-20241008070400-5396b928737d/go.mod h1:BtQhzToLB+G6CG+pCYX+SvixcExrN5D6R8F5JQtxaTM=
 github.com/vmihailenco/msgpack/v5 v5.3.4 h1:qMKAwOV+meBw2Y8k9cVwAy7qErtYCwBzZ2ellBfvnqc=
 github.com/vmihailenco/msgpack/v5 v5.3.4/go.mod h1:7xyJ9e+0+9SaZT0Wt1RGleJXzli6Q/V5KbhBonMG9jc=
 github.com/vmihailenco/tagparser/v2 v2.0.0 h1:y09buUbR+b5aycVFQs/g70pqKVZNBmxwAhO7/IwNM9g=

@@ -1,24 +1,25 @@
 services:
-  bee:
+  bee-dev:
+    container_name: bee-node-dev
     image: ethersphere/bee:2.2.0
-    container_name: bee-node
-    command: start --config /home/bee/bee.yml
-    volumes:
-      - ./bee-node/bee.yml:/home/bee/bee.yml # Mount Bee config file from bee-node folder
-      - ./bee-node/data:/home/bee/.bee # Bee node data persistence from bee-node folder
+    command: dev
+    networks:
+      - swarm-bee-network
+    expose:
+      - "1633" # Make the API port available within the network
     ports:
-      - "127.0.0.1:1633:1633" # API port for Bee node
-      - "1634:1634" # P2P port for Bee node
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://127.0.0.1:1633"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-    restart: unless-stopped
+      - "1633:1633" # Expose port 1633 to the host
 
-  swarm-registry:
-    image: swarm-registry # The Docker image for Swarm Registry
-    container_name: swarm-registry
+  swarm-registry-dev:
+    container_name: swarm-registry-dev
+    image: swarm-registry
     ports:
-      - "5000:5000" # Port mapping for the Swarm Registry
-    restart: unless-stopped
+      - "5000:5000" # Expose the registry on port 5000 for the host
+    networks:
+      - swarm-bee-network
+    depends_on:
+      - bee-dev
+
+networks:
+  swarm-bee-network:
+    driver: bridge

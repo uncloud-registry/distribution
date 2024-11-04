@@ -15,7 +15,7 @@ storage:
         inmemory: false
         host: "172.22.32.1"
         port: 1633
-        batchID: ""
+        batchID: bf2db1100e210f274352a8c4fc5b01ede559100b4d1020dcb6fafa947fea93b3
     maintenance:
         uploadpurging:
             enabled: false

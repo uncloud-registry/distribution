@@ -50,11 +50,22 @@ RUN --mount=from=binary,target=/build \
 FROM scratch AS artifact
 COPY --from=releaser /out /
 
+# FROM alpine:${ALPINE_VERSION}
+# RUN apk add --no-cache ca-certificates
+# COPY cmd/registry/config-dev.yml /etc/distribution/config.yml
+# COPY --from=binary /registry /bin/registry
+# VOLUME ["/var/lib/registry"]
+# EXPOSE 5000
+# ENTRYPOINT ["registry"]
+# CMD ["serve", "/etc/distribution/config.yml"]
+
+
 FROM alpine:${ALPINE_VERSION}
 RUN apk add --no-cache ca-certificates
-COPY cmd/registry/config-dev.yml /etc/distribution/config.yml
+COPY cmd/registry/config-dev.yml /etc/distribution/config-dev.yml
+COPY cmd/registry/config-main.yml /etc/distribution/config-main.yml
 COPY --from=binary /registry /bin/registry
 VOLUME ["/var/lib/registry"]
 EXPOSE 5000
-ENTRYPOINT ["registry"]
-CMD ["serve", "/etc/distribution/config.yml"]
+ENV MODE=main
+ENTRYPOINT ["sh", "-c", "registry serve /etc/distribution/config-${MODE}.yml"]

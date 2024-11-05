@@ -9,8 +9,13 @@ storage:
       enabled: true
     cache:
         blobdescriptor: inmemory
-    filesystem:
-        rootdirectory: /var/lib/registry
+    swarm:
+        encrypt: false
+        privateKey: 8e5c893846223894ed783acd26de67ce7d8a614107259dce1c6d6e42da4d24f57a22536487c200c38337afaa3f514ecdd38006657f4e05725baa21e4cf606892054e00dd947d6e737c4be92306d49fa4
+        inmemory: false
+        host: "172.22.32.1"
+        port: 1633
+        batchID: ""
     maintenance:
         uploadpurging:
             enabled: false

@@ -1,0 +1,25 @@
+services:
+  bee-dev:
+    container_name: bee-node-dev
+    image: ethersphere/bee:2.2.0
+    command: dev
+    networks:
+      - swarm-bee-network
+    expose:
+      - "1633" # Make the API port available within the network
+    ports:
+      - "1633:1633" # Expose port 1633 to the host
+
+  swarm-registry-dev:
+    container_name: swarm-registry-dev
+    image: swarm-registry
+    ports:
+      - "5000:5000" # Expose the registry on port 5000 for the host
+    networks:
+      - swarm-bee-network
+    depends_on:
+      - bee-dev
+
+networks:
+  swarm-bee-network:
+    driver: bridge

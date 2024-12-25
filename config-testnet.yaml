@@ -1,0 +1,38 @@
+version: 0.1
+log:
+  level: debug
+  fields:
+    service: registry
+    environment: development
+storage:
+    delete:
+      enabled: true
+    cache:
+        blobdescriptor: inmemory
+    swarm:
+        inmemory: false
+        encrypt: false
+        privateKey: 3074020101042018ad94e57c35828c79b93ae43c73c8f97c55a52c70503ee17c6e404412e3776aa00706052b8104000aa144034200048fbda095c39ee1e1b8765bdb164431728852ee5c9c6ebadcc5eddc22cbd995c42204dd014c4d74607826d63c9dc6e2119f173aaa5983423ed2c19b706e823767
+        cache: true
+        host: "127.0.0.1"
+        port: 1633
+        batchID: 296efc0057591675846e117cc4a88e3379bc8275330f0cc92a4559fb962b782f
+    maintenance:
+        uploadpurging:
+            enabled: false
+    tag:
+      concurrencylimit: 8
+http:
+    addr: :5000
+    debug:
+        addr: :5001
+        prometheus:
+            enabled: true
+            path: /metrics
+    headers:
+        X-Content-Type-Options: [nosniff]
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
